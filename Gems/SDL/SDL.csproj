@@ -10,6 +10,8 @@
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,6 +20,11 @@
          already-loaded copy (see GemAssemblyContext.Load); a second copy would be a different
          assembly identity and the host would not recognise the gem's [Gem] attribute. -->
     <ProjectReference Include="$(MagicRoot)Core\Magic.csproj" Private="false" ExcludeAssets="runtime" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SDL3-CS" Version="3.4.16" />
+    <PackageReference Include="SDL3-CS.Windows" Version="3.4.14.1" />
   </ItemGroup>
 
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />

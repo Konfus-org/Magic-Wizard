@@ -20,6 +20,10 @@
     <ProjectReference Include="$(MagicRoot)Core\Magic.csproj" Private="false" ExcludeAssets="runtime" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ZLogger" Version="2.5.10" />
+  </ItemGroup>
+
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
 
 </Project>
